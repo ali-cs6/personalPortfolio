@@ -4,7 +4,7 @@ import AllProjects from './AllProjects';
 
 function ProjectsMain() {
   return (
-    <div>
+    <div className='mt-30'>
       <ProjectsText />
       <AllProjects />
     </div>
