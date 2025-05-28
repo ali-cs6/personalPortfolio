@@ -1,5 +1,6 @@
 // import "./App.css";
 import AboutmeMain from "./components/aboutMeSection/AboutmeMain.jsx";
+import ContactMain from "./components/contactSection/ContactMain.jsx";
 import ExperienceMain from "./components/experienceSection/ExperienceMain.jsx";
 import HeroMain from "./components/heroSection/HeroMain.jsx";
 import NavBarMain from "./components/navBar/NavBarMain.jsx";
@@ -20,6 +21,7 @@ function App() {
       <SubSkillSection />
       <ExperienceMain />
       <ProjectsMain />
+      <ContactMain />
       <Helper />
     </main>
   );

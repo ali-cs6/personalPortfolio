@@ -7,7 +7,7 @@ function SingleProject({project}) {
     <div className={`flex flex-col md:flex-row items-center ${align === "left" ? "md:row" : "md:flex-row-reverse"}`}>
       <div className='relative max-w-[450px] h-auto m-10 md:hover:scale-110 transition-all duration-500'>
         <img src={image} alt="Not Found!" className='rounded-2xl'/>
-        <div className='absolute hidden md:block inset-0 bg-cyan/50 rounded-2xl hover:bg-cyan/0 transition-all duration-500'></div>
+        <div className='absolute hidden md:block inset-0 bg-cyan/30 rounded-2xl hover:bg-cyan/0 transition-all duration-500'></div>
       </div>
       <div className='text-center md:text-left'>
         <p className='text-orange text-2xl'>{name}</p>
