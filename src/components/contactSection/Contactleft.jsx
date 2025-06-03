@@ -58,7 +58,7 @@ function Contactleft() {
       {success && (
         <p className="text-cyan font-semibold -mt-7 mb-3">{success}</p>
       )}
-      <form className="flex flex-col gap-4" ref={form} onSubmit={sendEmail}>
+      <form className="flex flex-col gap-4 text-white" ref={form} onSubmit={sendEmail}>
         <input
           name="from_name"
           required
