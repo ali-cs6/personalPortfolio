@@ -8,7 +8,7 @@ import ProjectsMain from "./components/projectsSection/ProjectsMain.jsx";
 import SkillMain from "./components/skillsSection/SkillMain.jsx";
 import SubSkillSection from "./components/skillsSection/SubSkillSection.jsx";
 import SubHeroSection from "./components/subherosection/SubHeroSection.jsx";
-import Footer from "./footer/Footer.jsx";
+import Footer from "./components/footer/Footer.jsx";
 import Helper from "./Helper.jsx";
 
 function App() {
