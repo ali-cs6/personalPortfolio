@@ -5,6 +5,8 @@ import { FaReact, FaNodeJs } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
 import SingleSkill from "./SingleSkill";
+import { motion } from "framer-motion";
+import { fadesIn } from "../../framerMotion/variants.js";
 
 function AllSkills() {
   const skills = [
@@ -23,7 +25,16 @@ function AllSkills() {
   return (
     <div className="flex justify-center items-center gap-2 relative max-w-[1200px] mx-auto">
       {skills.map((skill, index) => {
-        return <SingleSkill key={index} text={skill.name} icon={skill.icon} />;
+        return (
+          <motion.div
+            variants={fadesIn("up", `0.${index}`)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+          >
+            <SingleSkill key={index} text={skill.name} icon={skill.icon} />
+          </motion.div>
+        );
       })}
     </div>
   );
